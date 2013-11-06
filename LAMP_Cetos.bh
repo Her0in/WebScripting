@@ -3,10 +3,10 @@
 yum install httpd mysql-server php php-mysql -y 
 
 service httpd start
-chkconfig httpd start
+chkconfig httpd on
 
 service mysqld start
-chkconfig mysqld start
+chkconfig mysqld on
 
 /usr/bin/mysql_secure_installation 
 
